@@ -1,1 +1,14 @@
-{}
+{
+    "name": "wojciech/03-11",
+    "authors": [
+        {
+            "name": "Wojciech Frącz",
+            "email": "fraczwojciech@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3",
+        "ext-json": "*",
+        "ext-sqlite3": "*"
+    }
+}
