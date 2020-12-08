@@ -87,6 +87,15 @@ $app->get(
     }
 );
 
+$app->delete(
+  '/api/participants/{id}',
+  function (Request $request, Response $response, array $args) use ($db) {
+      $sql = "DELETE FROM participant WHERE id = $args[id]"; // beware! SQL Injection Attack
+      $db->query($sql);
+      return $response->withStatus(204);
+  }
+);
+
 
 
 $app->run();
