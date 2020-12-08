@@ -25,7 +25,7 @@ export default {
     }, 
     methods: {
       addParticipant: function(){
-        var newParticipant = { id: Math.random()*1000, name: this.newParticipantName, lastName: this.newParticipantLastName };
+        var newParticipant = {firstname: this.newParticipantName, lastname: this.newParticipantLastName };
         this.$emit('addParticipant', newParticipant);
         this.newParticipantName = null;
         this.newParticipantLastName = null;
